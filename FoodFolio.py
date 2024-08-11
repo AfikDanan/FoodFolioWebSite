@@ -35,7 +35,7 @@ with tab1:
 with tab2:
     # Tutorial Section
     st.header("How to Use the Application")
-    st.subheader("Step 1: Add a New Recipe")
+    st.subheader("Add a New Recipe")
     st.markdown("""
     1. From the Home screen, tap the "Add" icon.
     2. Select a method to add the recipe (by image, by URL, or manually).
@@ -43,24 +43,24 @@ with tab2:
     4. Tap "Save" to store the recipe in your local database.
     """)
 
-    st.subheader("Step 2: Search and Filter Recipes")
-    st.markdown("""
-    1. Go to the "Search Recipes" section.
-    2. Use the search bar to find recipes by name or ingredient.
-    3. Apply filters to narrow down your results by category, cooking time, or other criteria.
-    """)
-
-    st.subheader("Step 3: Plan Your Meals")
+    st.subheader("Plan Your Meals")
     st.markdown("""
     1. Access the "Meal Planner" section.
     2. Select recipes to add to your meal plan.
-    3. Organize your meal plan by day, week, or month.
-    4. Click "Generate Shopping List" to create a list of ingredients for the selected recipes.
+    3. Organize your meal plan by day.
+    """)
+    
+    st.subheader("Generate a Grocery List")
+    st.markdown("""
+    1. Go to the "Grocery List" section.
+    2. Tap "Generate List" to automatically create a grocery list based on your selected recipes or the entire meal plan.
+    3. Review and adjust the list if needed, adding or removing items.
+    4. Use the grocery list during shopping to ensure you have all the ingredients required.
     """)
 
-    st.subheader("Step 4: Manage Your Recipe Collection")
+    st.subheader("Manage Your Recipe Collection")
     st.markdown("""
-    1. View all your stored recipes in the "Recipe Collection" section.
+    1. View all your stored recipes in the "All Recipes" section.
     2. Edit or delete recipes as needed.
     3. Export your recipe collection to share with others.
     """)
