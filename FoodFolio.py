@@ -1,9 +1,57 @@
 import streamlit as st
 
-tab1, tab2 = st.tabs(["About", "How to use"])
-
+tab1, tab2 ,tab3= st.tabs(["Privacy Policy","About", "How to use"])
 
 with tab1:
+
+    st.title("Privacy Policy")
+    st.write("**Effective Date:** Sep 9th, 2024")
+
+    st.subheader("Information We Do Not Collect")
+    st.write(
+        "Our app does not collect, store, or share any personal information or data, "
+        "except in specific scenarios related to image processing."
+    )
+
+    st.subheader("Data Collected for Image Processing")
+    st.write(
+        "If you choose to add a recipe via an image, the image will be temporarily sent "
+        "to a third-party server (AWS) and then to the Google Vision API for text extraction. "
+        "This process is solely for extracting recipe information from the image. The image is "
+        "not stored on our servers or shared with any other third parties beyond the stated purpose."
+    )
+
+    st.subheader("Local Data Storage")
+    st.write(
+        "All other data you create or manage within the app is stored locally on your device. "
+        "No other data is sent to our servers, third-party servers, or external services."
+    )
+
+    st.subheader("Data Security")
+    st.write(
+        "We prioritize your privacy and the security of your data. For the image processing feature, "
+        "we use secure transmission methods to send the image to AWS and the Google Vision API. Once "
+        "processed, the image is not retained by us or any of the third-party services."
+    )
+
+    st.subheader("Data Retention")
+    st.write(
+        "Images sent for processing are not stored by us or retained longer than necessary for text extraction. "
+        "We do not maintain copies of the images beyond this purpose."
+    )
+
+    st.subheader("Changes to This Privacy Policy")
+    st.write(
+        "We may update this Privacy Policy from time to time. Any changes will be reflected in the updated policy, "
+        "which will be available within the app. We encourage you to review this policy periodically for any updates or changes."
+    )
+
+    st.subheader("Contact Us")
+    st.write(
+        "If you have any questions or concerns about this Privacy Policy, please contact us at mystorecom24@gmail.com."
+    )
+
+with tab2:
     st.header("About the Application")
     # Introduction
     st.title("Welcome to Our Recipe Management Application")
@@ -32,7 +80,7 @@ with tab1:
     #### [QR Code to play Store Link]
     """)
     st.link_button("Github", 'https://github.com/TopazAakal/FoodFolioApp')
-with tab2:
+with tab3:
     # Tutorial Section
     st.header("How to Use the Application")
     st.subheader("Add a New Recipe")
