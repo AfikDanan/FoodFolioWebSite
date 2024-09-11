@@ -3,6 +3,22 @@ import streamlit as st
 tab1, tab2 ,tab3= st.tabs(["Privacy Policy","About", "How to use"])
 
 with tab1:
+    st.markdown(
+    """
+    <style>
+    body {
+        direction: rtl;
+        text-align: right;
+        font-family: 'Arial', sans-serif;
+    }
+    .stTextInput, .stButton, .stHeader, .stSubheader, .stMarkdown {
+        direction: rtl;
+        text-align: right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
 
     st.title("מדיניות פרטיות")
     st.subheader("Written by: FoodFolio Team")
