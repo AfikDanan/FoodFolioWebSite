@@ -4,53 +4,32 @@ tab1, tab2 ,tab3= st.tabs(["Privacy Policy","About", "How to use"])
 
 with tab1:
 
-    st.title("Privacy Policy")
-    st.subheader("Wrriten by: FoodFolio Team")
-    st.write("**Effective Date:** Sep 9th, 2024")
+    st.title("מדיניות פרטיות")
+    st.subheader("Written by: FoodFolio Team")
+    st.write("תאריך כניסה לתוקף: 10 בספטמבר, 2024")
 
-    st.subheader("Information We Do Not Collect")
-    st.write(
-        "Our app does not collect, store, or share any personal information or data, "
-        "except in specific scenarios related to image processing."
-    )
+    st.markdown("""
+    ### מידע שאינו נאסף  
+    האפליקציה שלנו אינה אוספת, שומרת או משתפת כל מידע אישי או נתונים, למעט במצבים ספציפיים הקשורים לעיבוד תמונות.
 
-    st.subheader("Data Collected for Image Processing")
-    st.write(
-        "If you choose to add a recipe via an image, the image will be temporarily sent "
-        "to a third-party server (AWS) and then to the Google Vision API for text extraction. "
-        "This process is solely for extracting recipe information from the image. The image is "
-        "not stored on our servers or shared with any other third parties beyond the stated purpose."
-    )
+    ### נתונים שנאספים לצורך עיבוד תמונות  
+    במידה שתבחר להוסיף מתכון באמצעות תמונה, התמונה תישלח באופן זמני לשרת צד שלישי (AWS) ולאחר מכן לשירות Google Vision API לצורך חילוץ טקסט. תהליך זה נעשה אך ורק לצורך חילוץ מידע מהתמונה המתייחסת למתכון. התמונה אינה נשמרת בשרתים שלנו ואינה משותפת עם צדדים שלישיים אחרים מעבר למטרה זו.
 
-    st.subheader("Local Data Storage")
-    st.write(
-        "All other data you create or manage within the app is stored locally on your device. "
-        "No other data is sent to our servers, third-party servers, or external services."
-    )
+    ### אחסון נתונים מקומי  
+    כל שאר הנתונים שאתה יוצר או מנהל בתוך האפליקציה נשמרים באופן מקומי במכשיר שלך. שום מידע אחר אינו נשלח לשרתים שלנו, לשרתים של צדדים שלישיים או לשירותים חיצוניים אחרים.
 
-    st.subheader("Data Security")
-    st.write(
-        "We prioritize your privacy and the security of your data. For the image processing feature, "
-        "we use secure transmission methods to send the image to AWS and the Google Vision API. Once "
-        "processed, the image is not retained by us or any of the third-party services."
-    )
+    ### עיבוד נתונים ואבטחה  
+    אנו נותנים עדיפות לפרטיות שלך ולשמירה על אבטחת הנתונים שלך. עבור תכונת עיבוד התמונות, אנו משתמשים בשיטות העברה מאובטחות כדי לשלוח את התמונה ל-AWS ול-Google Vision API. התמונה נשלחת בצורה מוצפנת (למשל, באמצעות HTTPS) כדי להבטיח שהנתונים יהיו מוגנים במהלך ההעברה. לאחר העיבוד, התמונה אינה נשמרת אצלנו או אצל שירותי הצד השלישי.
 
-    st.subheader("Data Retention")
-    st.write(
-        "Images sent for processing are not stored by us or retained longer than necessary for text extraction. "
-        "We do not maintain copies of the images beyond this purpose."
-    )
+    ### שמירת נתונים  
+    תמונות שנשלחות לעיבוד אינן נשמרות על ידינו או נשמרות לפרק זמן מעבר לנדרש לצורך חילוץ הטקסט. אנו לא שומרים עותקים של התמונות מעבר למטרה זו.
 
-    st.subheader("Changes to This Privacy Policy")
-    st.write(
-        "We may update this Privacy Policy from time to time. Any changes will be reflected in the updated policy, "
-        "which will be available within the app. We encourage you to review this policy periodically for any updates or changes."
-    )
+    ### שינויים במדיניות פרטיות זו  
+    ייתכנו שינויים במדיניות הפרטיות מעת לעת. כל שינוי ישתקף במדיניות המעודכנת, אשר תהיה זמינה בתוך האפליקציה. אנו ממליצים לעיין במדיניות זו מדי פעם כדי להתעדכן בשינויים.
 
-    st.subheader("Contact Us")
-    st.write(
-        "If you have any questions or concerns about this Privacy Policy, please contact us at afikdanan@gmail.com."
-    )
+    ### יצירת קשר  
+    אם יש לכם שאלות או חששות לגבי מדיניות פרטיות זו, אנא צרו איתנו קשר בכתובת: [afikdanan@gmail.com](mailto:afikdanan@gmail.com).
+    """)
 
 with tab2:
     st.header("About the Application")
