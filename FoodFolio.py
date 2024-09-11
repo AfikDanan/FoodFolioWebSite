@@ -5,6 +5,7 @@ tab1, tab2 ,tab3= st.tabs(["Privacy Policy","About", "How to use"])
 with tab1:
 
     st.title("Privacy Policy")
+    st.subheader("Wrriten by: FoodFolio Team")
     st.write("**Effective Date:** Sep 9th, 2024")
 
     st.subheader("Information We Do Not Collect")
@@ -48,7 +49,7 @@ with tab1:
 
     st.subheader("Contact Us")
     st.write(
-        "If you have any questions or concerns about this Privacy Policy, please contact us at mystorecom24@gmail.com."
+        "If you have any questions or concerns about this Privacy Policy, please contact us at afikdanan@gmail.com."
     )
 
 with tab2:
